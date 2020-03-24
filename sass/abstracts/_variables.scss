@@ -15,10 +15,23 @@ $color-gray-light-2: #eee;
 $color-gray-dark: #777;
 $color-white: #fff;
 $color-black: #000;
+
+$color-gradiant-green: linear-gradient(
+  to right bottom,
+  $color-primary-light,
+  $color-primary-dark
+);
+
 $color-gradiant-orange: linear-gradient(
   to right bottom,
   $color-secondary-light,
   $color-secondary-dark
+);
+
+$color-gradiant-blue: linear-gradient(
+  to right bottom,
+  $color-tertiary-light,
+  $color-tertiary-dark
 );
 
 //font
