@@ -1,3 +1,23 @@
+/*  Desktop approch first
+0 - 600px:       Phone
+600 - 900px:     Tablet
+900 - 1200px     Tablet Landscape
+1200 - 1800px    Is where ur normal style apply
+1800px + :          Big Screen 
+
+Breakpoint choices
+- phone
+- tablet-port
+- tablet-land
+- big-desktop
+
+Order: Base + Typography > general layout + grid  > page layout > components 
+
+ rem some time have problems, better to use em
+ 1 em = 16px
+
+ 
+ */
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -35,6 +55,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
