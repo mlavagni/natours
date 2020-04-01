@@ -12,6 +12,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
@@ -95,7 +96,7 @@
 
   &__heading-span {
     padding: 1rem 1.5rem;
-    -webkit-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
 
     &--1 {
@@ -181,6 +182,7 @@
 
       &--back {
         transform: rotateY(0);
+        -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
       }
     }
